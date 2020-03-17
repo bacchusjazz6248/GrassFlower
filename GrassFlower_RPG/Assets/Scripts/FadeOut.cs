@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FadeOut : MonoBehaviour {
     public GameObject Panel;
@@ -12,7 +13,6 @@ public class FadeOut : MonoBehaviour {
         a = Panel.GetComponent<Image>().color.a;
     }
 
-    //Aキーを押されたらフェード開始
     void Update () 
     {
         StartCoroutine(FadePanel());
@@ -28,5 +28,9 @@ public class FadeOut : MonoBehaviour {
             a += 0.01f;
             yield return null;
         }
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("Title");
     }
+    
+    
 }
