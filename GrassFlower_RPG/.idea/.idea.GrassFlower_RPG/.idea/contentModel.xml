@@ -199,11 +199,18 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="FadeIn.cs" t="Include" />
-          <e p="FadeOut.cs" t="Include" />
-          <e p="LongFadeOutInStart.cs" t="Include" />
-          <e p="PointerAudio.cs" t="Include" />
-          <e p="TitleButton.cs" t="Include" />
+          <e p="BT" t="Include">
+            <e p="FadeIn.cs" t="Include" />
+            <e p="FadeOut.cs" t="Include" />
+          </e>
+          <e p="S1" t="Include">
+            <e p="FadeInText.cs" t="Include" />
+          </e>
+          <e p="T" t="Include">
+            <e p="LongFadeOutInStart.cs" t="Include" />
+            <e p="PointerAudio.cs" t="Include" />
+            <e p="TitleButton.cs" t="Include" />
+          </e>
           <e p="TypefaceAnimator.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
