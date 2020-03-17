@@ -201,6 +201,7 @@
         <e p="Scripts" t="Include">
           <e p="FadeIn.cs" t="Include" />
           <e p="FadeOut.cs" t="Include" />
+          <e p="LongFadeOutInStart.cs" t="Include" />
           <e p="PointerAudio.cs" t="Include" />
           <e p="TitleButton.cs" t="Include" />
           <e p="TypefaceAnimator.cs" t="Include" />

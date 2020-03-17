@@ -15,7 +15,6 @@ public class TitleButton : MonoBehaviour {
     /// ボタンをクリックした時の処理
     public void OnClickStart() {
         sound01.PlayOneShot(sound01.clip);
-        SceneManager.LoadScene("Scene1");
     }
     
     public void OnClickContinue() {
