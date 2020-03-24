@@ -19,7 +19,6 @@ public class TitleButton : MonoBehaviour {
     
     public void OnClickContinue() {
         sound01.PlayOneShot(sound01.clip);
-        SceneManager.LoadScene("SaveScreen");
     }
     
     public void OnClickExit() {

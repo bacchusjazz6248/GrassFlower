@@ -211,6 +211,7 @@
             <e p="NextScene.cs" t="Include" />
           </e>
           <e p="T" t="Include">
+            <e p="LongFadeOutInContinue.cs" t="Include" />
             <e p="LongFadeOutInStart.cs" t="Include" />
             <e p="PointerAudio.cs" t="Include" />
             <e p="TitleButton.cs" t="Include" />

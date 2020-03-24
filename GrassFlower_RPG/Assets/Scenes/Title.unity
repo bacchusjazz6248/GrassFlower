@@ -4155,6 +4155,7 @@ GameObject:
   - component: {fileID: 1019250299}
   - component: {fileID: 1019250300}
   - component: {fileID: 1019250301}
+  - component: {fileID: 1019250302}
   m_Layer: 5
   m_Name: "\u30C4\u30C5\u30AD\u30AB\u30E9"
   m_TagString: Untagged
@@ -4222,6 +4223,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1019250299}
         m_MethodName: OnClickContinue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1019250302}
+        m_MethodName: OnClickInStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4384,6 +4396,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e469948799870344a042e36935d5908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1019250302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1019250294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f463571f4381bc4e8d8b79bf5f0b8c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 784295028}
 --- !u!1 &1021016675
 GameObject:
   m_ObjectHideFlags: 0
@@ -6155,7 +6179,7 @@ MonoBehaviour:
   delay: 2
   style: 0
   playOnAwake: 1
-  m_progress: 0
+  m_progress: 1
   usePosition: 0
   useRotation: 0
   useScale: 0
@@ -7217,7 +7241,7 @@ MonoBehaviour:
   delay: 2.5
   style: 0
   playOnAwake: 1
-  m_progress: 0
+  m_progress: 1
   usePosition: 0
   useRotation: 0
   useScale: 0
@@ -9849,7 +9873,7 @@ MonoBehaviour:
   delay: 3
   style: 0
   playOnAwake: 1
-  m_progress: 0
+  m_progress: 0.94313616
   usePosition: 0
   useRotation: 0
   useScale: 0
