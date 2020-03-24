@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SaveScreen.unity
     guid: c82e74f0b8c3c984ebccb1d6c87628b8
+  - enabled: 1
+    path: Assets/Scenes/Scene2.unity
+    guid: c742df6a7b30bbc4d8d727a335f6fb06
   m_configObjects: {}
