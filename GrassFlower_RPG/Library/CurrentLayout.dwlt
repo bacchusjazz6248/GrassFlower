@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 78
+  controlID: 122
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 79
+  controlID: 29
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 80
+  controlID: 77
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -470,20 +470,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/mode
+    - Assets/Level 1 Monster Pack/Prefabs/Slime
   m_ViewMode: 1
   m_StartGridSize: 43
   m_LastFolders:
-  - Assets/mode
+  - Assets/Level 1 Monster Pack/Prefabs/Slime
   m_LastFoldersGridSize: 43
   m_LastProjectPath: C:\Users\bacch\OneDrive\GFRPG\GrassFlower_RPG
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: be5e0000
-    m_LastClickedID: 24254
-    m_ExpandedIDs: 00000000402d0000f82e0000743300009e3a0000e04d0000e24d0000e44d0000e64d0000be5e000000ca9a3b
+    m_SelectedIDs: be2f0000
+    m_LastClickedID: 12222
+    m_ExpandedIDs: 00000000402d00009e2e0000042f00004e310000e83300008e3b0000ac450000da4e0000dc4e0000de4e0000e04e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -511,7 +511,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000402d0000f82e0000743300009e3a0000e04d0000e24d0000e44d0000e64d0000
+    m_ExpandedIDs: 00000000402d0000042f00004e310000e83300008e3b0000da4e0000dc4e0000de4e0000e04e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -542,18 +542,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000aa3b00003630000000000000b6400000f8470000063d00007e310000623000005c380000c45e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Models
-      m_OriginalName: Models
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 24720
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -627,23 +627,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 08760000
-    m_LastClickedID: 30216
-    m_ExpandedIDs: 0602feff4cdcffff74dcffff7adcffff8adcffffa0dcffff00ddffff06ddffff5cddffff62ddffff82ddffff98ddffff08deffff5adeffff60deffff66deffffb6defffffcdeffff02dfffff2adfffff68dfffff6edfffff74dfffff92dffffffcf1ffffe4fbffff00000000
+    m_SelectedIDs: aed9ffff
+    m_LastClickedID: -9810
+    m_ExpandedIDs: e4fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Main Camera
-      m_OriginalName: Main Camera
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 30216
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -679,14 +679,14 @@ MonoBehaviour:
     height: 484
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1506.2433297
+  lastFramingTime: 97.53921609999999
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 47.47, y: 1, z: 23.94}
+    m_Target: {x: 50, y: 0.0066867163, z: 40.00099}
     speed: 2
-    m_Value: {x: 47.47, y: 1, z: 23.94}
+    m_Value: {x: 50, y: 0.0066867163, z: 40.00099}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -716,11 +716,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.23267528, y: 0.6872532, z: -0.24931045, w: -0.6413966}
     speed: 2
-    m_Value: {x: -0.23267528, y: 0.6872532, z: -0.24931045, w: -0.6413966}
+    m_Value: {x: -0.23267527, y: 0.6872532, z: -0.24931043, w: -0.6413966}
   m_Size:
-    m_Target: 22
+    m_Target: 17.597916
     speed: 2
-    m_Value: 22
+    m_Value: 17.597916
   m_Ortho:
     m_Target: 0
     speed: 2
