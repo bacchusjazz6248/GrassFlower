@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 122
+  controlID: 28
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 77
+  controlID: 30
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -256,15 +256,15 @@ MonoBehaviour:
     height: 505
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
   - {fileID: 21}
   - {fileID: 15}
   - {fileID: 13}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 30886
+  m_LastSelectedObjectID: 18482
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -372,7 +372,24 @@ MonoBehaviour:
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: 1107169863927756254, guid: 01b10c709d55c8e4a87f3b9649a0ae22, type: 2}
+    - {fileID: 1107724625911605852, guid: 0439cde75cbd41d4aabe2a7bde121ec9, type: 2}
     m_ValueSerializationHelper:
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
     - e00: 1
       e01: 0
       e02: 0
@@ -470,20 +487,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Level 1 Monster Pack/Prefabs/Slime
+    - Assets/Animator
   m_ViewMode: 1
   m_StartGridSize: 43
   m_LastFolders:
-  - Assets/Level 1 Monster Pack/Prefabs/Slime
+  - Assets/Animator
   m_LastFoldersGridSize: 43
   m_LastProjectPath: C:\Users\bacch\OneDrive\GFRPG\GrassFlower_RPG
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: be2f0000
-    m_LastClickedID: 12222
-    m_ExpandedIDs: 00000000402d00009e2e0000042f00004e310000e83300008e3b0000ac450000da4e0000dc4e0000de4e0000e04e000000ca9a3b
+    m_SelectedIDs: c0410000
+    m_LastClickedID: 16832
+    m_ExpandedIDs: 00000000402d00009e2e0000042f00004e310000e83300008e3b0000ac450000664f0000684f00006a4f00006c4f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -511,7 +528,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000402d0000042f00004e310000e83300008e3b0000da4e0000dc4e0000de4e0000e04e0000
+    m_ExpandedIDs: 00000000402d00009e2e0000042f00004e310000e83300008e3b0000ac450000664f0000684f00006a4f00006c4f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -627,9 +644,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aed9ffff
-    m_LastClickedID: -9810
-    m_ExpandedIDs: e4fbffff00000000
+    m_SelectedIDs: a677feff
+    m_LastClickedID: -100442
+    m_ExpandedIDs: ac77feff70eefeffe4fbffff00000000104800001a48000028480000d64800000a4900007649000098490000864a0000484b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -679,14 +696,14 @@ MonoBehaviour:
     height: 484
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 97.53921609999999
+  lastFramingTime: 3307.2612635
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 50, y: 0.0066867163, z: 40.00099}
+    m_Target: {x: 137, y: -287.5, z: 0}
     speed: 2
-    m_Value: {x: 50, y: 0.0066867163, z: 40.00099}
+    m_Value: {x: 137, y: -287.5, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -718,9 +735,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.23267527, y: 0.6872532, z: -0.24931043, w: -0.6413966}
   m_Size:
-    m_Target: 17.597916
+    m_Target: 853.3117
     speed: 2
-    m_Value: 17.597916
+    m_Value: 853.3117
   m_Ortho:
     m_Target: 0
     speed: 2
