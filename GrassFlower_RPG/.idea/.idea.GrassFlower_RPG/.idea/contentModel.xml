@@ -210,6 +210,10 @@
             <e p="FadeOutS1.cs" t="Include" />
             <e p="NextScene.cs" t="Include" />
           </e>
+          <e p="S2" t="Include">
+            <e p="BattleSystem.cs" t="Include" />
+            <e p="CStatus.cs" t="Include" />
+          </e>
           <e p="T" t="Include">
             <e p="LongFadeOutInContinue.cs" t="Include" />
             <e p="LongFadeOutInStart.cs" t="Include" />
