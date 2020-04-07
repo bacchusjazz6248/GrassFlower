@@ -7,10 +7,17 @@ public class BattleSystem : MonoBehaviour
 	public CStatus player;
 	public CStatus enemy;
 	bool IsPlayerTurn;
+	private GameObject gameobj;
+	private Animator anim;
+	Quaternion q = Quaternion.Euler(0f, 0f, 0f);
+	private Transform trans;
+	float c_time = 0.0f;
 	
 	// Use this for initialization
 	void Start () {
-		
+		gameobj = GameObject.Find("unitychan_dynamic");
+		anim = gameobj.GetComponent<Animator>();
+		trans = gameobj.GetComponent<Transform>();
 	}
 	
 	// Update is called once per frame
@@ -32,7 +39,14 @@ public class BattleSystem : MonoBehaviour
 
 	public void OnAttackButton()
 	{
+		anim.SetBool("Attack", true);
+		trans.SetPositionAndRotation(new Vector3(50,0,30), q);
 		enemy.OnDamege(player.upower);
+		while (c_time < 2.0f)
+		{
+			c_time += Time.deltaTime;
+		}
+		c_time = 0.0f;
 		IsPlayerTurn = false;
 	}
 	
@@ -46,7 +60,14 @@ public class BattleSystem : MonoBehaviour
 		else
 		{
 			player.UseMp(30);
+			anim.SetBool("Attack", true);
+			trans.SetPositionAndRotation(new Vector3(50,0,30), q);
 			enemy.OnDamege(player.upower*3);
+			while (c_time < 2.0f)
+			{
+				c_time += Time.deltaTime;
+			}
+			c_time = 0.0f;
 			IsPlayerTurn = false;
 		}
 	}
@@ -61,7 +82,14 @@ public class BattleSystem : MonoBehaviour
 		else
 		{
 			player.UseMp(15);
+			anim.SetBool("Heal", true);
+			trans.SetPositionAndRotation(new Vector3(50,0,30), q);
 			player.OnHeal();
+			while (c_time < 2.0f)
+			{
+				c_time += Time.deltaTime;
+			}
+			c_time = 0.0f;
 			IsPlayerTurn = false;
 		}
 	}
