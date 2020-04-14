@@ -6,9 +6,11 @@ public class BattleSystem : MonoBehaviour
 {
 	public CStatus player;
 	public CStatus enemy;
-	bool IsPlayerTurn;
+	bool IsPlayerTurn = true;
 	private GameObject gameobj;
 	private Animator anim;
+	private GameObject sgameobj;
+	private Animator sanim;
 	Quaternion q = Quaternion.Euler(0f, 0f, 0f);
 	private Transform trans;
 	float c_time = 0.0f;
@@ -17,22 +19,35 @@ public class BattleSystem : MonoBehaviour
 	void Start () {
 		gameobj = GameObject.Find("unitychan_dynamic");
 		anim = gameobj.GetComponent<Animator>();
+		sgameobj = GameObject.Find("Slime_Green");
+		sanim = sgameobj.GetComponent<Animator>();
 		trans = gameobj.GetComponent<Transform>();
 	}
+
+	private float second = 0f;
 	
 	// Update is called once per frame
 	void Update () {
 		System.Random r = new System.Random(1000);
 		if (!IsPlayerTurn)
 		{
-			if (r.Next(1) == 0)
+			second += Time.deltaTime;
+			if (second >= 1.0f)
 			{
-				player.OnDamege(enemy.epower);
-				
-			}
-			else
-			{
-				player.SlimeBite(enemy.epower);
+				if (r.Next(2) == 0)
+				{
+					sanim.SetBool("Attack", true);
+					player.OnDamege(enemy.epower);
+					second = 0f;
+					IsPlayerTurn = true;
+
+				}
+				else
+				{
+					sanim.SetBool("Attack", true);
+					player.SlimeBite(enemy.epower);
+					IsPlayerTurn = true;
+				}
 			}
 		}
 	}
@@ -42,11 +57,6 @@ public class BattleSystem : MonoBehaviour
 		anim.SetBool("Attack", true);
 		trans.SetPositionAndRotation(new Vector3(50,0,30), q);
 		enemy.OnDamege(player.upower);
-		while (c_time < 2.0f)
-		{
-			c_time += Time.deltaTime;
-		}
-		c_time = 0.0f;
 		IsPlayerTurn = false;
 	}
 	
@@ -55,7 +65,6 @@ public class BattleSystem : MonoBehaviour
 		if (player.mp < 30)
 		{
 			Debug.Log("MP不足！");
-			IsPlayerTurn = false;
 		}
 		else
 		{
@@ -63,11 +72,6 @@ public class BattleSystem : MonoBehaviour
 			anim.SetBool("Attack", true);
 			trans.SetPositionAndRotation(new Vector3(50,0,30), q);
 			enemy.OnDamege(player.upower*3);
-			while (c_time < 2.0f)
-			{
-				c_time += Time.deltaTime;
-			}
-			c_time = 0.0f;
 			IsPlayerTurn = false;
 		}
 	}
@@ -77,7 +81,6 @@ public class BattleSystem : MonoBehaviour
 		if (player.mp < 30)
 		{
 			Debug.Log("MP不足！");
-			IsPlayerTurn = false;
 		}
 		else
 		{
@@ -85,11 +88,6 @@ public class BattleSystem : MonoBehaviour
 			anim.SetBool("Heal", true);
 			trans.SetPositionAndRotation(new Vector3(50,0,30), q);
 			player.OnHeal();
-			while (c_time < 2.0f)
-			{
-				c_time += Time.deltaTime;
-			}
-			c_time = 0.0f;
 			IsPlayerTurn = false;
 		}
 	}
