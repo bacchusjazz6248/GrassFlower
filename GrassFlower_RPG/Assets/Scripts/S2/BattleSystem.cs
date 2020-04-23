@@ -7,6 +7,8 @@ public class BattleSystem : MonoBehaviour
 	public CStatus player;
 	public CStatus enemy;
 	bool IsPlayerTurn = true;
+	bool IsPlayerGameOver = false;
+	bool IsMonsterGameOver = false;
 	private GameObject gameobj;
 	private Animator anim;
 	private GameObject sgameobj;
@@ -14,6 +16,8 @@ public class BattleSystem : MonoBehaviour
 	Quaternion q = Quaternion.Euler(0f, 0f, 0f);
 	private Transform trans;
 	float c_time = 0.0f;
+	public GameObject ResultPanel;
+	public GameObject ResultWinPanel;
 	
 	// Use this for initialization
 	void Start () {
@@ -22,12 +26,40 @@ public class BattleSystem : MonoBehaviour
 		sgameobj = GameObject.Find("Slime_Green");
 		sanim = sgameobj.GetComponent<Animator>();
 		trans = gameobj.GetComponent<Transform>();
+		ResultPanel.SetActive(false);
+		ResultWinPanel.SetActive(false);
+	}
+
+	void ViewResult()
+	{
+		ResultPanel.SetActive(true);
+	}
+	
+	void ViewWinResult()
+	{
+		ResultWinPanel.SetActive(true);
 	}
 
 	private float second = 0f;
 	
 	// Update is called once per frame
 	void Update () {
+		if (IsPlayerGameOver)
+		{
+			ViewResult();
+			return;
+		}
+		
+		if (IsMonsterGameOver)
+		{
+			second += Time.deltaTime;
+			if (second >= 3.0f)
+			{
+				ViewWinResult();
+				return;
+			}
+		}
+		
 		System.Random r = new System.Random(1000);
 		if (!IsPlayerTurn)
 		{
@@ -49,6 +81,10 @@ public class BattleSystem : MonoBehaviour
 					IsPlayerTurn = true;
 				}
 			}
+			
+			if(player.hp == 0){
+				IsPlayerGameOver = true;
+			}
 		}
 	}
 
@@ -57,6 +93,11 @@ public class BattleSystem : MonoBehaviour
 		anim.SetBool("Attack", true);
 		trans.SetPositionAndRotation(new Vector3(50,0,30), q);
 		enemy.OnDamege(player.upower);
+		if(enemy.hp == 0)
+		{
+			sanim.SetBool("Die", true);
+			IsMonsterGameOver = true;
+		}
 		IsPlayerTurn = false;
 	}
 	
@@ -72,6 +113,11 @@ public class BattleSystem : MonoBehaviour
 			anim.SetBool("Attack", true);
 			trans.SetPositionAndRotation(new Vector3(50,0,30), q);
 			enemy.OnDamege(player.upower*3);
+			if(enemy.hp == 0)
+			{
+				sanim.SetBool("Die", true);
+				IsMonsterGameOver = true;
+			}
 			IsPlayerTurn = false;
 		}
 	}
